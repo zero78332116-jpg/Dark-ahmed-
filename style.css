@@ -1,0 +1,109 @@
+body {
+  background: #020603;
+  color: #00ff55;
+  font-family: monospace;
+  padding: 20px;
+}
+
+.terminal {
+  max-width: 650px;
+  margin: 30px auto;
+  border: 1px solid #00ff55;
+  padding: 20px;
+  box-shadow: 0 0 20px #00ff5533;
+  background: #050b07;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #00ff55;
+  padding-bottom: 15px;
+}
+
+h1 {
+  text-shadow: 0 0 12px #00ff55;
+}
+
+.status {
+  margin-top: 25px;
+  font-size: 11px;
+}
+
+.screen {
+  background: #000;
+  border: 1px solid #164d28;
+  padding: 15px;
+  margin-top: 25px;
+  min-height: 230px;
+}
+
+#logs {
+  color: #00ff55;
+  line-height: 2;
+  overflow-wrap: anywhere;
+}
+
+button {
+  background: #00ff55;
+  color: #001b08;
+  border: none;
+  padding: 14px;
+  width: 100%;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.progress {
+  height: 9px;
+  background: #16301e;
+  margin-top: 20px;
+}
+
+#bar {
+  height: 100%;
+  width: 0%;
+  background: #00ff55;
+  transition: width 0.3s;
+}
+
+#result, footer {
+  text-align: center;
+  margin-top: 20px;
+}
+#matrix {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.35;
+}
+
+.terminal {
+  position: relative;
+  z-index: 1;
+}
+.command-box {
+  display: flex;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.command-box input {
+  flex: 1;
+  min-width: 0;
+  background: #000;
+  color: #00ff55;
+  border: 1px solid #00ff55;
+  padding: 12px;
+  font-family: monospace;
+}
+
+.command-box button {
+  width: 75px;
+  margin: 0;
+}
